@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper>
+<!--    添加一本书-->
+    <insert id="addBook" parameterType="Book">
+        insert into books (bookName,bookCounts,detail)
+        values (#{bookName},#{bookCounts},#{detail});
+    </insert>
+<!--    删除一本书-->
+    <delete id="deleteBook">
+        delete
+        from books
+        where bookID=#{id};
+    </delete>
+<!--    修改一本书-->
+    <update id="updateBook" parameterType="Book">
+        update books
+        set bookName = #{bookName},
+            bookCounts = #{bookCounts},
+            detail = #{detail}
+        where bookID=#{bookID};
+    </update>
+<!--    根据书ID查找书-->
+    <select id="selectBookById" resultType="Book">
+        select *
+        from books where bookID=#{bookID};
+    </select>
+<!--    查找所有的书-->
+    <select id="selectBook" resultType="Book">
+        select *
+        from books;
+    </select>
+</mapper>
