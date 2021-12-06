@@ -12,7 +12,7 @@ import java.util.List;
  * @create: 2021-12-06 18:19
  **/
 
-public class BookServiceImp implements BookService{
+public class BookServiceImpl implements BookService{
     private BookMapper bookMapper;
 
     public void setBookMapper(BookMapper bookMapper) {
