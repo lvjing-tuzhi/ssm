@@ -15,7 +15,6 @@
     <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-${list}
 <div class="container">
 
     <div class="row clearfix">

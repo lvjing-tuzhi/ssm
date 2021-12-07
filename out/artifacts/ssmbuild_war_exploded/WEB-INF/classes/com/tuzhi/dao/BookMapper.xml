@@ -25,7 +25,7 @@
 <!--    根据书ID查找书-->
     <select id="selectBookById" resultType="Book">
         select *
-        from books where bookID=#{bookID};
+        from books where bookID=#{id};
     </select>
 <!--    查找所有的书-->
     <select id="selectBook" resultType="Book">

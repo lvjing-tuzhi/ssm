@@ -23,4 +23,14 @@ public class MyTest {
             System.out.println(book);
         }
     }
+    @Test
+    public void test1() {
+        long startTime=System.currentTimeMillis();
+        for (int i = 0; i <= 99999999; i++) {
+            Math.pow(2,i);
+        }
+        long endTime=System.currentTimeMillis();
+        System.out.println("程序运行时间： "+(startTime-endTime)+"ms");
+    }
+
 }
