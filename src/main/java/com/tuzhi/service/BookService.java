@@ -23,4 +23,6 @@ public interface BookService {
     Book selectBookById(int id);
     //    查找所有的书
     List<Book> selectBook();
+    //    根据bookName查找书籍
+    Book selectBookByName(String bookName);
 }

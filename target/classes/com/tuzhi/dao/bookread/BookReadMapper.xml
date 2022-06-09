@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tuzhi.dao.bookread.BookReadMapper">
+<!--    添加图书借阅-->
+    <insert id="addBookRead" parameterType="BookRead">
+        insert into bookRead (booId, userId)
+        values (#{bookId}, #{userId});
+    </insert>
+<!--    删除图书借阅-->
+    <delete id="deleteBookRead">
+        delete
+        from bookRead
+        where id=#{id};
+    </delete>
+<!--    修改图书借阅-->
+    <update id="updateBookRead" parameterType="BookRead">
+        update bookRead
+        set bookId = #{bookId}, userId = #{userId}
+        where id=#{id};
+    </update>
+<!--    查找所有的图书借阅-->
+    <select id="selectBookRead" resultType="BookReadVo">
+        select bookread.id id, books.bookName bookName, user.name userName
+        from bookread, books, user where bookread.bookId=books.bookID and bookread.userId=user.id;
+    </select>
+
+</mapper>

@@ -29,7 +29,14 @@
 
     <div class="row">
         <div class="col-md-4 column">
-            <a class="btn btn-primary" href="${pageContext.request.contextPath}/book/toAddBook">新增</a>
+            <a class="btn btn-primary" href="${pageContext.request.contextPath}/book/toAddBook">新增书籍</a>
+        </div>
+        <div class="col-md-4 column">
+            <span style="color: red;font-size: 16px">${error}</span>
+            <form action="${pageContext.request.contextPath}/book/queryBook" method="post" style="float: right" class="form-inline">
+                <input type="text" name="queryBookName" class="form-control" placeholder="请输入要查询到名称">
+                <input type="submit" value="查询" class="btn btn-primary">
+            </form>
         </div>
     </div>
 

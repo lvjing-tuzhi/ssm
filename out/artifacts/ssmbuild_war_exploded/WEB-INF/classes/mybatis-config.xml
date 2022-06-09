@@ -6,10 +6,15 @@
     
     <typeAliases>
         <typeAlias type="com.tuzhi.pojo.Book"/>
+        <typeAlias type="com.tuzhi.pojo.User"/>
+        <typeAlias type="com.tuzhi.pojo.BookRead"/>
+        <typeAlias type="com.tuzhi.pojo.vo.BookReadVo"/>
     </typeAliases>
 
     <mappers>
         <mapper class="com.tuzhi.dao.BookMapper"/>
+        <mapper class="com.tuzhi.dao.user.UserMapper"/>
+        <mapper class="com.tuzhi.dao.bookread.BookReadMapper"/>
     </mappers>
 
 </configuration>

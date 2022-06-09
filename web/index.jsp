@@ -21,15 +21,26 @@
       margin: 100px auto;
       text-align: center;
       line-height: 38px;
-      background: deepskyblue;
+      background: #ff315f;
+      border-radius: 4px;
+    }
+    h1 {
+      width: 100%;
+      height: 38px;
+      margin: 100px auto;
+      text-align: center;
+      line-height: 38px;
+      background: #ff315f;
       border-radius: 4px;
     }
   </style>
 </head>
 <body>
-
-<h3>
-  <a href="${pageContext.request.contextPath}/book/allBook">点击进入列表页</a>
-</h3>
+  <h1>图书管理系统</h1>
+  <h3>
+    <a href="${pageContext.request.contextPath}/book/allBook">图书管理</a>
+  </h3>
+  <h3><a href="${pageContext.request.contextPath}/user/allUser">会员管理</a></h3>
+  <h3><a href="${pageContext.request.contextPath}/bookread/allBookRead">借阅管理</a></h3>
 </body>
 </html>

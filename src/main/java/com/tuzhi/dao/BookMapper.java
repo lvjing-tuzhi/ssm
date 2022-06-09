@@ -23,4 +23,6 @@ public interface BookMapper {
     Book selectBookById(@Param("id") int id);
 //    查找所有的书
     List<Book> selectBook();
+//    根据bookName查找书籍
+    Book selectBookByName(@Param("bookName") String bookName);
 }
