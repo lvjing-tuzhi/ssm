@@ -21,7 +21,7 @@
         <div class="col-md-12 column">
             <div class="page-header">
                 <h1>
-                    <small>新增书籍</small>
+                    <small>新增会员</small>
                 </h1>
             </div>
         </div>

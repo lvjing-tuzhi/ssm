@@ -50,8 +50,9 @@ public class UserController {
 //    跳转到修改书籍
     @RequestMapping("toUpdateUser")
     public String toUpdateUser(Model model,int id) {
-        User User = UserService.selectUserById(id);
-        model.addAttribute("User",User);
+        User user = UserService.selectUserById(id);
+
+        model.addAttribute("user",user);
         return "user/updateUser";
     }
 
